@@ -136,24 +136,37 @@
         <div class="contacto">
             <h2 class="tituloh2">Contacto</h2>
             <div class="formulario">
-                <form>
+                <form class="" action="/" method="post">
+                    {{ csrf_field() }}
                     <div class="mb-3">
                         <label for="validationDefault01">Nombre de usted o de su empresa</label>
-                        <input type="text" class="form-control" id="validationDefault01" required>
+                        <input type="text" name="nombreDelContacto" class="form-control" id="validationDefault01" required>
                     </div>
+                    @error ('nombreDelContacto')
+						{{$message}}<br>
+					@enderror
                     <div class="mb-3">
-                        <label for="validationDefault01">Correo Electrónico</label>
-                        <input type="text" class="form-control" id="validationDefault01" required>
+                        <label for="validationDefault01">Correo Electrónico para contactarse</label>
+                        <input type="text" name="CorreoDelContacto" class="form-control" id="validationDefault01" required>
                     </div>
+                    @error ('correoDelContacto')
+						{{$message}}<br>
+					@enderror
                     <div class="mb-3">
                         <label for="validationDefault01">Motivo de contacto</label>
-                        <input type="text" class="form-control" id="validationDefault01" required>
+                        <input type="text" name="motivoDeContacto" class="form-control" id="validationDefault01" required>
                     </div>
+                    @error ('motivoDeContacto')
+						{{$message}}<br>
+					@enderror
                     <div class="mb-3">
 					    <label for="validationDefault01">Mensaje</label>
-                        <textarea class="textarea form-control" name="form_fields[message]" id="form-field-message" rows="4"></textarea>				
+                        <textarea class="textarea form-control" name="descripcion" id="form-field-message" rows="4"></textarea>				
                     </div>
-                    <button type="submit" class="btn btn-primary" id="contacto">Enviar</button>
+                    @error ('form_fields')
+						{{$message}}<br>
+					@enderror
+                    <button class="btn btn-primary" id="contacto">Enviar</button>
                   </form>
             </div>
         </div>
