@@ -23,7 +23,14 @@ window.addEventListener('load', function(){
 				slidesToShow: 3,
 				slidesToScroll: 3
 			  }
-			}
+			},{
+				// screens greater than >= 1024px
+				breakpoint: 1500,
+				settings: {
+				  slidesToShow: 4,
+				  slidesToScroll: 4
+				}
+			  }
 		]
 	});
 });

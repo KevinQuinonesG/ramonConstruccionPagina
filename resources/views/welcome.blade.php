@@ -7,6 +7,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Construcciones Ramon</title>
         <!-- Fonts -->
+        <link rel="icon" href="{{ url('images/logo.png') }}">
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -119,7 +120,7 @@
         </div>
         <div class="CV" id="CV">
             <p>Descarga mi CV</p>
-            <a class="face-button" href="">
+            <a download="Ramon DG" class="face-button" href="/pdf/series_sumables.pdf">
 
                 <div class="face-primary">
                   <span class="icon fa fa-cloud"></span>
