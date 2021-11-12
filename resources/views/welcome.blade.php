@@ -16,7 +16,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <script src="/js/app.js"></script>
     </head>
     <header>
         <div class="flex-container informacion">
@@ -88,7 +89,7 @@
         <div class="presentacion">
             <h2 class="tituloh2" id="quienSoy">¿Quien soy?</h2>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vel unde facere inventore ut quis vero sequi rerum quibusdam! Eius aut aliquam doloremque non fuga libero neque ab quae numquam!</p>
+                <p>Soy Ramon Daniel Gonzalez. Llevo más de 20 años resolviendo y dando servicios de albañilería y refacciones en general por CABA y el Gran Buenos Aires en General. Cuento con Electricistas y Gasistas matriculados de confianza</p>
             </div>
             <div class="contenedorImagen">
                 <img src="/images/2.jpeg">
@@ -109,6 +110,7 @@
                         <li>Albañería en General</li>
                         <li>Plomería</li>
                         <li>Electricidad</li>
+                        <li>Instalación de Gas</li>
                         <li>Colocación de Cerámica</li>
                         <li>Durlock</li>
                         <li>Pintura</li>
@@ -178,6 +180,5 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
         <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-        <script src="/js/app.js"></script>
     </body>
 </html>
