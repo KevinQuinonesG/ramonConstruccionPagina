@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        
+        <meta name="description" content="Más de 20 años dando soluciones de albañilería, gas, electricidad, pintura y todo lo que necesite para hacer su casa un hogar">
+
         <title>Construcciones Ramon</title>
         <!-- Fonts -->
         <link rel="icon" href="{{ url('images/logo.png') }}">
@@ -20,6 +23,9 @@
         <script src="/js/app.js"></script>
     </head>
     <header>
+        <div class="botonFlotanteWSP">
+            <a href="https://api.whatsapp.com/send?phone=+5491167344207&text=Hola!%20Este%20mensaje%20se%20envi%C3%B3%20desde%20la%20p%C3%A1gina.%20Quisiera%20contactarme%20con%20usted"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
         <div class="flex-container informacion">
             <div class="menu">
                 <a href="#quienSoy">¿Quien Soy?</a>
@@ -41,6 +47,8 @@
             <div class="títulos">
                 <h1>Construcciones Ramon</h1>
                 <h4>Experto en albañilería y todo lo que necesite en su hogar</h4>
+                <p><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <a href="https://api.whatsapp.com/send?phone=+5491167344207&text=Hola!%20Este%20mensaje%20se%20envi%C3%B3%20desde%20la%20p%C3%A1gina.%20Quisiera%20contactarme%20con%20usted">1132831325</a></p>
             </div>
             <div class="carousel">
                 <div class="carousel__contenedor">
@@ -50,19 +58,19 @@
     
                     <div class="carousel__lista">
                         <div class="carousel__elemento">
-                            <img src="/images/carrousel1.jpeg" alt="Rock and Roll Hall of Fame">
+                            <img src="/images/carrousel1.jpeg" alt="Construccion en Merlo">
                         </div>
                         <div class="carousel__elemento">
-                            <img src="/images/carrousel2.jpeg" alt="Constitution Square - Tower I">
+                            <img src="/images/carrousel2.jpeg" alt="Construccion en CABA">
                         </div>
                         <div class="carousel__elemento">
-                            <img src="/images/carrousel3.jpeg" alt="Empire State Building">
+                            <img src="/images/carrousel3.jpeg" alt="Construccion en Moreno">
                         </div>
                         <div class="carousel__elemento">
-                            <img src="/images/carrousel4.jpeg" alt="Harmony Tower">
+                            <img src="/images/carrousel4.jpeg" alt="Construccion en San Isidro">
                         </div>
                         <div class="carousel__elemento">
-                            <img src="/images/carrousel5.jpeg" alt="Empire State Building">
+                            <img src="/images/carrousel5.jpeg" alt="Reparacion de hogar">
                         </div>
                         <div class="carousel__elemento">
                             <img src="/images/carrousel6.jpeg" alt="Harmony Tower">
@@ -153,6 +161,13 @@
                         <input type="text" name="CorreoDelContacto" class="form-control" id="validationDefault01" required>
                     </div>
                     @error ('correoDelContacto')
+						{{$message}}<br>
+					@enderror
+                    <div class="mb-3">
+                        <label for="validationDefault01">Número para contactarse</label>
+                        <input type="text" name="numeroDeContacto" class="form-control" id="validationDefault01" required>
+                    </div>
+                    @error ('numeroDeContacto')
 						{{$message}}<br>
 					@enderror
                     <div class="mb-3">

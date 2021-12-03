@@ -10,6 +10,7 @@
     <h1>Nuevo correo de contacto</h1>
     <p>Mensaje de: {{ $details ['name']}}</p>
     <p>Correo: {{ $details ['email'] }} </p>
+    <p>Número de telefono: {{ $details ['numero']}} </p>
     <h3>Motivo: {{ $details ['motivo'] }}</h3>
     <h4>{{ $details ['descripcion'] }}</h4>
 </body>

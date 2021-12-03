@@ -17,6 +17,25 @@ header {
     flex-direction: column;
     position: relative;
 }
+.botonFlotanteWSP {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.botonFlotanteWSP:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
 .logo {
     width: 100%;
     margin-left: 10px;
@@ -51,6 +70,11 @@ body {
     font-size: 13px;
     margin-top: 40px;
     overflow: hidden;
+}
+.contactoWhatsapp {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .presentacion {
     position: relative;
